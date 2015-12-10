@@ -1,0 +1,5 @@
+# startup apps
+@reboot /usr/bin/emacs
+@reboot /usr/bin/clementine
+@reboot /usr/bin/google-chrome
+
