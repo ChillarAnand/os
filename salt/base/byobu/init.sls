@@ -1,3 +1,0 @@
-byobu:
-  pkg:
-    - installed

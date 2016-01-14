@@ -1,4 +1,4 @@
 base:
   '*':
-    - byobu
+    - basics
     - oh-my-zsh
