@@ -1,0 +1,15 @@
+interface: 192.168.0.121
+
+state_output: mixed
+
+file_roots:
+  base:
+    - /srv/salt/envs/base
+  dev:
+    - /srv/salt/envs/dev
+  server:
+    - /srv/salt/envs/server
+
+pillar_roots:
+  base:
+    - /salt/pillars/base

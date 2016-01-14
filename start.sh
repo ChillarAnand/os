@@ -14,3 +14,9 @@ git pull origin master
 # salt
 ./salt/start/master.sh
 ./salt/start/minion.sh
+
+sudo cp salt/start/minion /etc/salt/
+sudo cp salt/start/master /etc/salt/
+
+sudo service salt-master restart
+sudo service salt-minion restart
