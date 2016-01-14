@@ -7,7 +7,7 @@ cd projects/ubuntu
 sudo apt-get install --yes git
 git config --global user.name 'chillaranand'
 git clone https://github.com/ChillarAnand/os.git
-
+cd os
 
 # salt
 ./salt/start/master.sh
