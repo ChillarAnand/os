@@ -4,11 +4,7 @@ state_output: mixed
 
 file_roots:
   base:
-    - /srv/salt/envs/base
-  dev:
-    - /srv/salt/envs/dev
-  server:
-    - /srv/salt/envs/server
+    - /home/anand/projects/ubuntu/os/salt/base
 
 pillar_roots:
   base:
