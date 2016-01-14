@@ -31,3 +31,4 @@ for cmd in commands:
     shell_execute(cmd)
 
 shell_execute('sudo salt-key -A')
+shell_execute('sudo salt "*" state.highstate saltenv=base')
