@@ -12,8 +12,11 @@ git pull origin master
 
 
 # salt
-./salt/start/master.sh
-./salt/start/minion.sh
+
+if ! apt-get -qq install salt-minion; then
+    ./salt/start/master.sh
+    ./salt/start/minion.sh
+fi
 
 sudo cp salt/start/minion /etc/salt/
 sudo cp salt/start/master /etc/salt/
