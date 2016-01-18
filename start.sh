@@ -24,8 +24,8 @@ git clone https://github.com/r0adrunner/Space2Ctrl.git
 cd Space2Ctrl
 make
 sudo make install
+./s2cctl start
 cd ..
-s2cctl start
 
 
 # salt setup
