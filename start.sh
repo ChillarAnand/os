@@ -13,13 +13,23 @@ ln -s .custom-zsh/zshrc .zshrc
 chsh -s /usr/bin/zsh anand
 
 
+
 mkdir -p projects/ubuntu
 cd projects/ubuntu
 
+
+# install s2ctrl
+sudo apt-get install libx11-dev libxtst-dev --yes
+git clone https://github.com/r0adrunner/Space2Ctrl.git
+cd Space2Ctrl
+make
+sudo make install
+cd ..
+s2cctl start
+
+
+# salt setup
 git clone https://github.com/ChillarAnand/os.git
 cd os
 git pull origin master
-
-
-# salt
 python salt/start/setup.py
