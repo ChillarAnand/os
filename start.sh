@@ -40,6 +40,6 @@ cd ..
 # salt setup
 git clone https://github.com/ChillarAnand/os.git
 cd os
-./os/space2ctrl.sh  # activate
+./space2ctrl.sh  # activate
 git pull origin master
 python salt/start/setup.py
