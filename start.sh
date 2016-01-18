@@ -13,7 +13,6 @@ ln -s .custom-zsh/zshrc .zshrc
 chsh -s /usr/bin/zsh anand
 
 
-
 mkdir -p projects/ubuntu
 cd projects/ubuntu
 
@@ -35,11 +34,12 @@ cd xcape
 make
 sudo make install
 cd ..
-./space2ctrl.sh
+
 
 
 # salt setup
 git clone https://github.com/ChillarAnand/os.git
 cd os
+./os/space2ctrl.sh  # activate
 git pull origin master
 python salt/start/setup.py
