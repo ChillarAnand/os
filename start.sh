@@ -17,16 +17,6 @@ mkdir -p projects/ubuntu
 cd projects/ubuntu
 
 
-# install s2ctrl
-# sudo apt-get install libx11-dev libxtst-dev --yes
-# git clone https://github.com/r0adrunner/Space2Ctrl.git
-# cd Space2Ctrl
-# make
-# sudo make install
-# ./s2cctl start
-# cd ..
-
-
 # install xcape
 sudo apt-get install git gcc make pkg-config libx11-dev libxtst-dev libxi-dev
 git clone https://github.com/alols/xcape.git
@@ -34,7 +24,6 @@ cd xcape
 make
 sudo make install
 cd ..
-
 
 
 # salt setup
