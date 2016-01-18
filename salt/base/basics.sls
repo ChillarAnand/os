@@ -1,5 +1,5 @@
 utils:
-  pkg.latest:
+  pkg.installed:
     - pkgs:
       - unzip
       - tree
