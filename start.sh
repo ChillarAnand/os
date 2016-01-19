@@ -26,9 +26,14 @@ sudo make install
 cd ..
 
 
-# salt setup
+
 git clone https://github.com/ChillarAnand/os.git
 cd os
 ./space2ctrl.sh  # activate
 git pull origin master
+
+# salt setup
 python salt/start/setup.py
+
+# run scripts
+./basics.sh
