@@ -10,4 +10,11 @@ cd emacs-24.5
 ./configure
 make
 sudo make install
-cd -2
+
+
+# config
+cd
+git clone https://github.com/chillaranand/.emacs.d.git
+
+
+cd -3
