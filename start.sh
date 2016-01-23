@@ -20,7 +20,7 @@ cd projects/ubuntu
 
 
 # install xcape
-sudo apt-get install git gcc make pkg-config libx11-dev libxtst-dev libxi-dev
+sudo apt-get install --yes git gcc make pkg-config libx11-dev libxtst-dev libxi-dev
 git clone https://github.com/alols/xcape.git
 cd xcape
 make
