@@ -2,6 +2,8 @@
 
 cd
 
+sudo apt-get update
+
 sudo apt-get install --yes git
 sudo apt-get install --yes byobu
 sudo apt-get install --yes zsh
