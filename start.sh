@@ -1,16 +1,40 @@
 #! /bin/sh
 
+install_package()
+{
+    package=$1
+    ppa=$2
+    if [ -z $2 ]; then
+        sudo add-apt-repository --yes ppa:$ppa > /tmp/foo
+    fi
+    sudo apt-fast -qq --yes install $package
+    echo "$package is installed \n\n"
+}
+
 cd
 
-sudo apt-get update
+if [ ! -f /usr/sbin/apt-fast ]; then
+    echo "Installing apt-fast..."
+    # apt-fast
+    sudo add-apt-repository --yes ppa:apt-fast/stable > /tmp/foo
+    sudo apt-get -qq update
+    sudo apt-get -qq install --yes apt-fast
+    # sudo dpkg-reconfigure apt-fast  # configure
+fi
 
-sudo apt-get install --yes git
-sudo apt-get install --yes byobu
-sudo apt-get install --yes zsh
+install_package zsh
+install_package git
+
+# install byobu
+install_package byobu byobu/ppa
+
 
 git config --global user.name 'chillaranand'
-git clone https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh
-git clone https://github.com/ChillarAnand/.custom-zsh.git .custom-zsh
+git config --global user.name 'anand21nanda@gmail.com'
+
+git clone https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh || echo "Cloned oh-my-zsh"
+git clone https://github.com/ChillarAnand/.custom-zsh.git .custom-zsh || cd .custom-zsh; git pull origin master; cd ; echo "Cloned custom-zsh"
+rm .zshrc
 ln -s .custom-zsh/zshrc .zshrc
 chsh -s /usr/bin/zsh anand
 
@@ -19,23 +43,12 @@ mkdir -p projects/ubuntu
 cd projects/ubuntu
 
 
-# install xcape
-sudo apt-get install --yes git gcc make pkg-config libx11-dev libxtst-dev libxi-dev
-git clone https://github.com/alols/xcape.git
-cd xcape
-make
-sudo make install
-cd ..
-
-
-
 git clone https://github.com/ChillarAnand/os.git
 cd os
-./space2ctrl.sh  # activate
 git pull origin master
 
 # salt setup
-python salt/start/setup.py
+# python salt/start/setup.py
 
 # run scripts
 ./basics.sh
