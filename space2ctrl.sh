@@ -15,7 +15,7 @@ fi
 
 # reset kbd, xcape
 setxkbmap -layout us
-ps -ef | grep "[x]cape" | awk '{print $2}' | xargs kill -9
+pkill xcape
 
 
 # use space as space/ctrl
