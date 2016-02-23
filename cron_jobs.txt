@@ -4,5 +4,6 @@
 # nohup /usr/bin/google-chrome &
 # nohup gnome-terminal -x sh -c "/usr/bin/byobu -S boot-time;"
 */1 * * * * /home/anand/projects/ubuntu/os/sync_repos.sh
+@reboot byobu -S boot-time d
 @reboot /usr/bin/emacs
 @reboot /usr/bin/google-chrome
