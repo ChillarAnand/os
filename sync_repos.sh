@@ -7,10 +7,9 @@ sync_repo()
     cd $1
     git pull origin master -q
     git push origin master -q
+    echo "Done."
 }
 
 echo "Syncing repos..."
-sync_repo '/home/anand/projects/01/'
-sync_repo '/home/anand/projects/ubuntu/os/'
-sync_repo '/home/anand/.emacs.d/'
-sync_repo '/home/anand/.custom-zsh/'
+sync_repo ~/.emacs.d/
+sync_repo ~/.os/
