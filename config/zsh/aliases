@@ -1,0 +1,129 @@
+alias a=alias
+
+alias j=z
+alias jd='cd ~/Downloads/'
+alias js='cd ~/sandbox'
+
+
+alias b='byobu'
+alias ag='sudo apt-get'
+alias ai='sudo apt-get install --yes'
+alias au='sudo apt-get update -qq'
+alias c='cat'
+alias cf='clementine -f'
+alias ch='google-chrome 2&>1 > /dev/null &'
+alias cr='clementine -r'
+
+alias d='dirs -v | head -10'
+alias de='sudo salt master state.highstate saltenv=web'
+
+alias pgi='ps -ef | grep -i'
+
+
+# python aliases
+alias py='python'
+alias ipy='ipython'
+
+alias pf='pip freeze | sort'
+alias pi='pip install'
+alias pir='pip install -r'
+alias pirr='pip install -r requirements.txt'
+alias piu='pip install --upgrade'
+alias piup='pip install --upgrade pip'
+alias pu='pip uninstall --yes'
+
+alias psi='python setup.py install'
+
+alias pt="py.test "
+
+alias nb='ipython notebook'
+alias jn='jupyter notebook'
+alias 1n='cd /home/anand/projects/01/python; jupyter notebook python3.ipynb'
+
+alias dj="python manage.py"
+alias djc="python manage.py createsuperuser"
+alias djcd="python manage.py createsuperuser --username admin --email a@a.com"
+alias dm="python manage.py migrate"
+alias dmm="python manage.py makemigrations"
+alias dr="python manage.py runserver --no-color"
+alias drp="python manage.py runserver_plus"
+alias ds="python manage.py shell"
+alias dsp="python manage.py shell_plus"
+alias dn='python manage.py shell_plus --notebook'
+
+
+
+alias du='du -hs'
+alias e='emacs 2&>1 >/dev/null &'
+alias f='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+# alias f='thefuck'
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+
+
+alias h='history'
+alias hg='history | grep'
+alias hgi='history | grep -i'
+alias ht='htop'
+
+alias i='ping 8.8.8.8'
+
+
+alias jobs='jobs -l'
+
+alias k='kill -9'
+alias pk='pkill'
+alias ka='killall '
+alias kc='killall chrome'
+alias ke='killall emacs'
+
+alias l='clear && ls'
+
+alias le=less
+alias lg1=log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+alias lg2=log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+alias lg="git lg1"
+alias gpom="git push origin master"
+alias gi="git init"
+alias gcl="git clone"
+alias gn="git clone"
+
+
+alias m=man
+
+alias me='free -h'
+
+alias ms="mysql"
+
+alias n='nautilus .'
+
+
+alias re='sudo shutdown -r 0'
+alias rf='rm -rf'
+
+alias s1='~/projects/ubuntu/os/space2ctrl.sh'
+
+alias s=sudo
+alias si='sudo -i'
+alias sp='sudo du -hs *'
+alias sudo='sudo '
+
+alias se='source .env'
+
+alias sy='rsync -raz --progress'
+alias sz='source ~/.zshrc'
+alias t='tree -Cfh'
+alias we='workon exp'
+alias wi='whereis'
+alias wo='workon'
+alias wp='workon pearl'
+alias yd='youtube-dl '
+
+alias lh='http://127.0.0.1:8000'
+alias ak='appknox --username admin --password 123123 --host 127.0.0.1:8000 --no-secure'
+alias akh='appknox --help'
+
+alias bm="tmux new-session -d -s mycroft;
+tmux new-window -t mycroft:1 -n 'server' -c ~/sandbox/appknox/mycroft './scripts/start_server';
+tmux new-window -t mycroft:2 -n 'ls'  -c ~/sandbox/appknox/mycroft 'ls';
+
+tmux -2 attach-session -t mycroft;"
