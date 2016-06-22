@@ -38,7 +38,7 @@ alias pt="py.test "
 
 alias nb='ipython notebook'
 alias jn='jupyter notebook'
-alias 1n='cd /home/anand/projects/01/python; jupyter notebook python3.ipynb'
+alias 1n='cd ~/.01/python; jupyter notebook python3.ipynb'
 
 alias dj="python manage.py"
 alias djc="python manage.py createsuperuser"

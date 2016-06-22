@@ -82,3 +82,10 @@ if [ ! -f /usr/bin/emacs ]; then
     git clone https://github.com/chillaranand/.emacs.d.git
 fi
 echo "emacs is installed"
+
+
+# usual software
+
+# android connect
+install_package mtpfs
+install_package clipit
