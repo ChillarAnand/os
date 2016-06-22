@@ -100,6 +100,8 @@ alias n='nautilus .'
 alias re='sudo shutdown -r 0'
 alias rf='rm -rf'
 
+alias us='sudo bash ~/.os/start.sh'
+
 alias s1='~/projects/ubuntu/os/space2ctrl.sh'
 
 alias s=sudo
