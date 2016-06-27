@@ -90,7 +90,7 @@ alias gn="git clone"
 
 alias m=man
 
-alias me='free -h'
+alias me='chmod +x '
 
 alias ms="mysql"
 

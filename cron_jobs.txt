@@ -1,9 +1,10 @@
-# nohup /usr/bin/synapse -s &
-# nohup /usr/bin/clementine &
-# nohup /usr/bin/emacs &
-# nohup /usr/bin/google-chrome &
-# nohup gnome-terminal -x sh -c "/usr/bin/byobu -S boot-time;"
-*/1 * * * * /home/anand/projects/ubuntu/os/sync_repos.sh
-@reboot byobu -S boot-time d
-@reboot /usr/bin/emacs
-@reboot /usr/bin/google-chrome
+# usage
+
+# update git repos
+*/1 * * * * ~/.os/bin/sync_repos.sh
+
+# sar
+# Collect measurements at 10-minute intervals
+0,10,20,30,40,50   * * * *   /usr/lib/sa/sa1
+# Create daily reports and purge old files
+0                  0 * * *   /usr/lib/sa/sa2 -A
