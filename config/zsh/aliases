@@ -102,7 +102,7 @@ alias rf='rm -rf'
 
 alias us='sudo bash ~/.os/start.sh'
 
-alias s1='~/projects/ubuntu/os/space2ctrl.sh'
+alias sc='~/.os/bin/space2ctrl.sh'
 
 alias s=sudo
 alias si='sudo -i'
