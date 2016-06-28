@@ -129,3 +129,5 @@ tmux new-window -t mycroft:1 -n 'server' -c ~/sandbox/appknox/mycroft './scripts
 tmux new-window -t mycroft:2 -n 'ls'  -c ~/sandbox/appknox/mycroft 'ls';
 
 tmux -2 attach-session -t mycroft;"
+
+alias ct='crontab '

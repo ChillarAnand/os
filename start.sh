@@ -88,4 +88,28 @@ echo "emacs is installed"
 
 # android connect
 install_package mtpfs
+
+# manage clipboards
 install_package clipit
+
+# music player
+install_package clementine
+
+sudo apt-get install -yqq compizconfig-settings-manager compiz-plugins-extra
+
+sudo apt-get install -yqq dconf-tools
+
+# essentials
+sudo apt-get install --yes -qq build-essential libevent-dev
+sudo apt-get install --yes -qq libncurses5-dev gcc libffi-dev
+sudo apt-get install --yes -qq libxml2-dev libxslt1-dev libssl-dev
+sudo apt-get install -yqq libpq-dev libjpeg-dev libblas-dev liblapack-dev libatlas-base-dev gfortran
+
+# posgres
+sudo apt-get install -y -qq postgresql postgresql-contrib
+
+
+# python
+sudo apt-fast install -qq --yes python-dev python3-dev
+sudo pip install virtualenvwrapper
+# sudo pip install pandas numpy jupyter matplotlib scipy
