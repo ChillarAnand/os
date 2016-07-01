@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/gnome-terminal
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_IN]=terminal
+Name=terminal
+Comment[en_IN]=start term
+Comment=start term

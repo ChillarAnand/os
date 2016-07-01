@@ -88,7 +88,12 @@ alias gcl="git clone"
 alias gn="git clone"
 
 
-alias m=man
+alias m=mux
+alias tk='tmux kill-session -t '
+alias tkm='tmux kill-session -t mycroft'
+
+
+alias ma=man
 
 alias me='chmod +x '
 
